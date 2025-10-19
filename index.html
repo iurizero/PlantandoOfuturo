@@ -6,33 +6,46 @@
     <title>Plantando o Futuro - Preservação Ambiental e Educação</title>
     <meta name="description" content="Projeto dedicado à defesa, preservação e recuperação do meio ambiente através da educação ambiental e protagonismo jovem.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="theme-color" content="#16a34a">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24'>🌱</text></svg>'">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
-            <div class="nav-container">
+                <div class="nav-container">
                 <div class="nav-logo">
-                    <i class="fas fa-seedling"></i>
-                    <span>Plantando o Futuro</span>
+                    <i class="fas fa-seedling logo-icon"></i>
+                    <span class="logo-text">Plantando o Futuro</span>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Início</a></li>
-                    <li><a href="#about" class="nav-link">Sobre</a></li>
-                    <li><a href="#project" class="nav-link">Projeto</a></li>
-                    <li><a href="#impact" class="nav-link">Impacto</a></li>
-                    <li><a href="#sponsors" class="nav-link">Patrocinadores</a></li>
-                    <li><a href="#contact" class="nav-link">Contato</a></li>
-                </ul>
-                <div class="nav-toggle">
+                
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
                     <span></span>
                     <span></span>
                     <span></span>
+                </button>
+                
+                <div class="nav-menu-wrapper" id="nav-menu">
+                    <ul class="nav-menu" id="primary-navigation">
+                        <li class="nav-item"><a href="#home" class="nav-link"><i class="fas fa-home nav-icon"></i><span>Início</span></a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-info-circle nav-icon"></i><span>Sobre</span></a></li>
+                        <li class="nav-item"><a href="#project" class="nav-link"><i class="fas fa-leaf nav-icon"></i><span>Projeto</span></a></li>
+                        <li class="nav-item"><a href="#impact" class="nav-link"><i class="fas fa-chart-line nav-icon"></i><span>Impacto</span></a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link"><i class="fas fa-tasks nav-icon"></i><span>Projetos</span></a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope nav-icon"></i><span>Contato</span></a></li>
+                    </ul>
+                    
+                    <div class="nav-cta">
+                        <a href="#contact" class="btn btn-nav">Participe</a>
+                    </div>
                 </div>
             </div>
         </nav>
+        
+        <!-- script de navegação movido para script.js -->
     </header>
 
     <!-- Hero Section -->
@@ -43,11 +56,16 @@
                     <span class="highlight">Plantando</span> o Futuro
                 </h1>
                 <p class="hero-subtitle">
-                    Trabalhando pela defesa, preservação e recuperação do meio ambiente através da educação ambiental e protagonismo jovem
+                    Educação Ambiental para a Sustentabilidade - Uma iniciativa da professora Daniela da EREM Manoel Bacelar e Escola José Joaquim de Lima
+                </p>
+                <p class="hero-event">
+                    <strong>Próximo evento:</strong> Ano 2 - Robótica Sustentável<br>
+                    20 de outubro de 2025 às 13:00h<br>
+                    Anexo da Escola José Joaquim de Lima, Vila Trapiá, Riacho das Almas
                 </p>
                 <div class="hero-buttons">
                     <a href="#project" class="btn btn-primary">Conheça o Projeto</a>
-                    <a href="#sponsors" class="btn btn-secondary">Seja um Patrocinador</a>
+                    <a href="#projects" class="btn btn-secondary">Ver Projetos</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -82,55 +100,59 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Sobre o Projeto</h2>
-                <p class="section-subtitle">Uma iniciativa que transcende o simples ato de plantar árvores</p>
+                <p class="section-subtitle">Educação Ambiental para a Sustentabilidade</p>
             </div>
             
             <div class="about-content">
                 <div class="about-main">
                     <div class="about-text">
-                        <h3>Nossa Missão</h3>
-                        <p>O projeto "Plantando o Futuro" é uma iniciativa dedicada à defesa, preservação e recuperação do meio ambiente através da educação ambiental e do protagonismo jovem. Trabalhamos para criar um futuro mais sustentável e consciente.</p>
+                        <h3>Nossa História</h3>
+                        <p>O Projeto Plantando o Futuro é uma iniciativa de educação ambiental para a sustentabilidade, idealizada pela professora de Biologia/Ciências Daniela, da EREM Manoel Bacelar e Escola José Joaquim de Lima. Sua primeira edição aconteceu em outubro de 2024, com o objetivo de sensibilizar os estudantes para a importância do cuidado com o meio ambiente e a construção de hábitos sustentáveis no cotidiano.</p>
+                        
+                        <p>Durante o projeto, os alunos participaram de atividades práticas, debates e produções coletivas que estimularam a reflexão sobre a preservação ambiental e o papel de cada cidadão na promoção de um futuro mais equilibrado e saudável para o planeta.</p>
                         
                         <h3>Nossos Valores</h3>
                         <ul class="values-list">
                             <li><strong>Sustentabilidade:</strong> Promovemos práticas que garantem o equilíbrio ecológico</li>
                             <li><strong>Educação:</strong> Acreditamos no poder transformador do conhecimento</li>
-                            <li><strong>Juventude:</strong> Valorizamos o protagonismo jovem nas mudanças ambientais</li>
+                            <li><strong>Inovação:</strong> Unimos tecnologia e consciência ambiental</li>
                             <li><strong>Comunidade:</strong> Fortalecemos laços comunitários através de ações coletivas</li>
                         </ul>
                     </div>
                     
                     <div class="about-visual">
-                        <div class="stats-container">
-                            <div class="stat-item">
-                                <div class="stat-icon">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
-                                    </svg>
-                                </div>
-                                <span class="stat-number" data-target="500">500</span>
-                                <span class="stat-label">Árvores Plantadas</span>
-                                <span class="stat-description">Contribuindo para o reflorestamento e preservação ambiental</span>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M16,4C18.2,4 20,5.8 20,8C20,10.2 18.2,12 16,12C13.8,12 12,10.2 12,8C12,5.8 13.8,4 16,4M16,14C20.4,14 24,15.8 24,18V20H8V18C8,15.8 11.6,14 16,14M8.5,4C10.7,4 12.5,5.8 12.5,8C12.5,10.2 10.7,12 8.5,12C6.3,12 4.5,10.2 4.5,8C4.5,5.8 6.3,4 8.5,4M8.5,14C12.9,14 16.5,15.8 16.5,18V20H0V18C0,15.8 3.6,14 8.5,14Z"/>
-                                    </svg>
-                                </div>
-                                <span class="stat-number" data-target="50">50</span>
-                                <span class="stat-label">Jovens Engajados</span>
-                                <span class="stat-description">Formando líderes ambientais do futuro</span>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
-                                    </svg>
-                                </div>
-                                <span class="stat-number" data-target="10">10</span>
-                                <span class="stat-label">Escolas Parceiras</span>
-                                <span class="stat-description">Expandindo a educação ambiental nas comunidades</span>
+                        <div class="metrics">
+                            <div class="metrics-grid" role="list">
+                                <article class="metric-card" role="listitem">
+                                    <div class="metric-icon">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path d="M16,4C18.2,4 20,5.8 20,8C20,10.2 18.2,12 16,12C13.8,12 12,10.2 12,8C12,5.8 13.8,4 16,4M16,14C20.4,14 24,15.8 24,18V20H8V18C8,15.8 11.6,14 16,14M8.5,4C10.7,4 12.5,5.8 12.5,8C12.5,10.2 10.7,12 8.5,12C6.3,12 4.5,10.2 4.5,8C4.5,5.8 6.3,4 8.5,4M8.5,14C12.9,14 16.5,15.8 16.5,18V20H0V18C0,15.8 3.6,14 8.5,14Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="metric-value">+200</div>
+                                    <div class="metric-label">Jovens Engajados</div>
+                                    <div class="metric-desc">Formando líderes ambientais do futuro</div>
+                                </article>
+                                <article class="metric-card" role="listitem">
+                                    <div class="metric-icon">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="metric-value">50</div>
+                                    <div class="metric-label">Projetos Realizados</div>
+                                    <div class="metric-desc">Contribuindo para o desenvolvimento sustentável</div>
+                                </article>
+                                <article class="metric-card" role="listitem">
+                                    <div class="metric-icon">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="metric-value">5</div>
+                                    <div class="metric-label">Escolas Parceiras</div>
+                                    <div class="metric-desc">Expandindo a educação ambiental nas comunidades</div>
+                                </article>
                             </div>
                         </div>
                     </div>
@@ -142,7 +164,7 @@
                         <div class="pillar-card">
                             <div class="pillar-icon">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                                    <path d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z"/>
                                 </svg>
                             </div>
                             <h4>Preservação</h4>
@@ -152,7 +174,7 @@
                         <div class="pillar-card">
                             <div class="pillar-icon">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/>
+                                    <path d="M12,3L1,9L12,15L23,9L12,3M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
                                 </svg>
                             </div>
                             <h4>Educação</h4>
@@ -162,7 +184,7 @@
                         <div class="pillar-card">
                             <div class="pillar-icon">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M16 4C18.2 4 20 5.8 20 8C20 10.2 18.2 12 16 12C13.8 12 12 10.2 12 8C12 5.8 13.8 4 16 4M16 14C20.4 14 24 15.8 24 18V20H8V18C8 15.8 11.6 14 16 14M8.5 4C10.7 4 12.5 5.8 12.5 8C12.5 10.2 10.7 12 8.5 12C6.3 12 4.5 10.2 4.5 8C4.5 5.8 6.3 4 8.5 4M8.5 14C12.9 14 16.5 15.8 16.5 18V20H0V18C0 15.8 3.6 14 8.5 14Z"/>
+                                    <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
                                 </svg>
                             </div>
                             <h4>Comunidade</h4>
@@ -172,7 +194,7 @@
                         <div class="pillar-card">
                             <div class="pillar-icon">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H22V19C22,19.6 21.6,20.2 21,20.5V21C21,21.6 20.6,22 20,22S19,21.6 19,21V20H17.8M19,16H5V5C5,3.3 6.3,2 8,2H16C17.7,2 19,3.3 19,5V16Z"/>
+                                    <path d="M5,3V12H3V14H5V21H7V14H9V12H7V5H19V12H17V14H19V21H21V14H23V12H21V3H5Z"/>
                                 </svg>
                             </div>
                             <h4>Inovação</h4>
@@ -189,16 +211,21 @@
         <div class="container">
             <div class="project-content">
                 <div class="project-text">
-                    <h2>Nossa Missão</h2>
-                    <p>O Plantando o Futuro é uma jornada em direção à construção de um amanhã mais sustentável e consciente, onde a natureza e a comunidade se conectam de maneira significativa.</p>
-                    <p>Nosso compromisso vai além de enriquecer o solo com as raízes das árvores - cultivamos a conscientização ambiental nas mentes e corações das pessoas.</p>
+                    <h2>Edição 2025: Robótica Sustentável</h2>
+                    <p>Diante do sucesso da primeira edição, o projeto terá continuidade em 2025, com a realização do Ano 2. O novo tema, "Robótica Sustentável", une tecnologia e consciência ambiental e acontecerá no dia 20/10 a partir de 13:00h no prédio onde funciona o Anexo, na Escola José Joaquim de Lima na Vila Trapiá em Riacho das Almas.</p>
+                    
+                    <h3>Desfile de Moda de Roupas Sustentáveis</h3>
+                    <p>Uma das atrações especiais deste ano será o Desfile de Moda de Roupas Sustentáveis, no qual os alunos apresentarão peças criadas a partir de materiais reaproveitados e ideias criativas que valorizam o consumo consciente. O desfile pretende mostrar que é possível unir estilo, inovação e respeito ao meio ambiente.</p>
+                    
+                    <p>Assim, o Plantando o Futuro segue como uma experiência pedagógica transformadora, que alia conhecimento científico, inovação e responsabilidade socioambiental, formando estudantes mais críticos, criativos e comprometidos com o futuro do planeta.</p>
+                    
                     <div class="project-stats">
                         <div class="stat">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Árvores Plantadas</span>
+                            <span class="stat-number">2ª</span>
+                            <span class="stat-label">Edição do Projeto</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">50+</span>
+                            <span class="stat-number">200+</span>
                             <span class="stat-label">Jovens Engajados</span>
                         </div>
                         <div class="stat">
@@ -270,44 +297,43 @@
     </section>
 
     <!-- Sponsors Section -->
-    <section id="sponsors" class="sponsors">
+    <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Seja um Patrocinador</h2>
-                <p class="section-subtitle">Junte-se a nós na construção de um futuro mais sustentável</p>
+                <h2 class="section-title">Projetos dos Alunos</h2>
+                <p class="section-subtitle">Conheça as iniciativas sustentáveis desenvolvidas pelos nossos jovens</p>
             </div>
-            <div class="sponsor-content">
-                <div class="sponsor-benefits">
-                    <h3>Por que patrocinar?</h3>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check"></i> Contribua para a preservação ambiental</li>
-                        <li><i class="fas fa-check"></i> Fortaleça sua responsabilidade social</li>
-                        <li><i class="fas fa-check"></i> Apoie a educação de jovens</li>
-                        <li><i class="fas fa-check"></i> Ganhe visibilidade em nossas ações</li>
-                        <li><i class="fas fa-check"></i> Faça parte de uma causa transformadora</li>
-                    </ul>
-                </div>
-                <div class="sponsor-cta">
-                    <h3>Planos de Patrocínio</h3>
-                    <div class="sponsor-plans">
-                        <div class="plan">
-                            <h4>Semente</h4>
-                            <p class="plan-price">R$ 500/mês</p>
-                            <p>Apoio básico com menção em redes sociais</p>
-                        </div>
-                        <div class="plan featured">
-                            <h4>Árvore</h4>
-                            <p class="plan-price">R$ 1.500/mês</p>
-                            <p>Logo em materiais e eventos</p>
-                        </div>
-                        <div class="plan">
-                            <h4>Floresta</h4>
-                            <p class="plan-price">R$ 3.000/mês</p>
-                            <p>Parceria estratégica completa</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="roboticasustentavel.jpg" alt="Projeto de Robótica Sustentável" class="project-img" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-content">
+                        <h3>Robótica Sustentável</h3>
+                        <p class="project-description">Projeto que utiliza materiais recicláveis para criar protótipos robóticos funcionais, demonstrando como a tecnologia pode ser aliada da sustentabilidade.</p>
+                        <div class="project-tags">
+                            <span class="tag">Tecnologia</span>
+                            <span class="tag">Reciclagem</span>
+                            <span class="tag">Inovação</span>
                         </div>
                     </div>
-                    <a href="#contact" class="btn btn-primary">Entre em Contato</a>
                 </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="vestidosustentavel.jpg" alt="Projeto de Moda Sustentável" class="project-img" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-content">
+                        <h3>Moda Sustentável</h3>
+                        <p class="project-description">Coleção de vestuário desenvolvida a partir de tecidos reciclados e tingimentos naturais, mostrando como a moda pode ser bonita e responsável com o meio ambiente.</p>
+                        <div class="project-tags">
+                            <span class="tag">Moda</span>
+                            <span class="tag">Upcycling</span>
+                            <span class="tag">Artesanato</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -325,7 +351,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>contato@plantandoofuturo.com.br</p>
+                            <p>PlantandoOFuturo@outlook.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -339,22 +365,26 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Telefone</h4>
-                            <p>(47) 9 9999-9999</p>
+                            <p>(81) 9 9376-8256 (Daniela)</p>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form id="contact-form" class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Seu nome" required>
+                        <label class="sr-only" for="contact-name">Seu nome</label>
+                        <input id="contact-name" name="name" type="text" placeholder="Seu nome" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Seu email" required>
+                        <label class="sr-only" for="contact-email">Seu email</label>
+                        <input id="contact-email" name="email" type="email" placeholder="Seu email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Empresa/Organização">
+                        <label class="sr-only" for="contact-company">Empresa/Organização</label>
+                        <input id="contact-company" name="company" type="text" placeholder="Empresa/Organização">
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                        <label class="sr-only" for="contact-message">Sua mensagem</label>
+                        <textarea id="contact-message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
@@ -378,27 +408,27 @@
                     <ul>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#project">Projeto</a></li>
-                        <li><a href="#sponsors">Patrocinadores</a></li>
+                        <li><a href="#projects">Projetos</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Redes Sociais</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/plantandoofuturo.oficial" target="_blank">
+                        <a href="mailto:PlantandoOFuturo@outlook.com" aria-label="Enviar email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/5581993768256" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/plantandoofuturo" target="_blank" rel="noopener" aria-label="Abrir Instagram">
                             <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Plantando o Futuro. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Plantando o Futuro. Criado por: <a href="https://www.linkedin.com/in/iuri-costa-ba6365230/" target="_blank" rel="noopener">Iuri Costa</a></p>
             </div>
         </div>
     </footer>
