@@ -1910,3 +1910,45 @@ body {
   .metric-card { padding: 1rem 1rem 1.25rem; }
   .metric-value { font-size: clamp(1.75rem, 7vw, 2.25rem); }
 }
+
+/* Project Section responsive tweaks */
+.project-text { max-width: 70ch; }
+
+@media (max-width: 1024px) {
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .project-visual {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    padding: 4rem 0;
+  }
+  .project-text h2 {
+    font-size: 2rem;
+  }
+  .project-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+  .project-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-stats {
+    grid-template-columns: 1fr;
+  }
+  .project .stat-number {
+    font-size: 2rem;
+  }
+}
